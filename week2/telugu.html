@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Telugu Language</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script defer src="quiz.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+</head>
+
+<body class="bg-light">
+  <div class="container mt-5">
+    <h1 class="text-center text-success mb-4 d-flex align-items-center justify-content-center">
+      <a href="index.html" class="btn btn-link me-3 fs-3"><i class="bi bi-arrow-left-circle-fill"></i></a>
+      Telugu
+    </h1>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <h4 class="card-title">Telugu</h4>
+        <p class="card-text">
+          నిన్న ఉదయం, నేను ఒక మహిళను పార్క్ పక్కన ఆమె బ్లాక్ డాగ్‌తో నడుస్తూ చూశాను. ఆమె చేతిలో రెండు పుస్తకాలు ఉండగా, ఆమె పాఠశాల వైపు వెళ్తోంది. ఆమె ఎర్ర జాకెట్ వేసుకొని, ప్రపంచంలో అంతా సమయం ఉన్నట్టు నవ్వుతూ నడిచింది.
+        </p>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <h4 class="card-title">Explanation in English</h4>
+        <p class="card-text">
+          Yesterday, I saw a woman walking her black dog near the park in the morning. She had two books in her hand and was heading to the school, wearing a red jacket and smiling like she had all the time in the world.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="card mb-4">
+      <div class="card-body" data-word="మహిళ" data-translation="Woman" data-pronunciation="ma-hi-la" data-image="images/woman.jpg">
+        <p>What does "మహిళ" mean?</p>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz1" value="correct" /> Woman</div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz1" value="wrong" /> Man</div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz1" value="wrong" /> Boy</div>
+        <button class="btn btn-primary mt-3" onclick="checkAnswer('quiz1')">Submit</button>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body" data-word="పుస్తకాలు" data-translation="Books" data-pronunciation="pus-ta-kaa-lu" data-image="images/books.jpg">
+        <p>What does "పుస్తకాలు" mean?</p>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz2" value="correct" /> Books</div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz2" value="wrong" /> Pens</div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz2" value="wrong" /> Bags</div>
+        <button class="btn btn-primary mt-3" onclick="checkAnswer('quiz2')">Submit</button>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body" data-word="పార్క్" data-translation="Park" data-pronunciation="paark" data-image="images/park.jpg">
+        <p>What does "పార్క్" mean?</p>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz3" value="wrong" /> Mall</div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz3" value="correct" /> Park</div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz3" value="wrong" /> Garden</div>
+        <button class="btn btn-primary mt-3" onclick="checkAnswer('quiz3')">Submit</button>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body" data-word="కుక్క" data-translation="Dog" data-pronunciation="kook-ka" data-image="images/dog.jpg">
+        <p>What does "కుక్క" mean?</p>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz4" value="wrong" /> Cat</div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz4" value="wrong" /> Cow</div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz4" value="correct" /> Dog</div>
+
+        <button class="btn btn-primary mt-3" onclick="checkAnswer('quiz4')">Submit</button>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body" data-word="పాఠశాల" data-translation="School" data-pronunciation="paa-tha-shaa-la" data-image="images/school.jpg">
+        <p>What does "పాఠశాల" mean?</p>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz5" value="correct" /> School</div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz5" value="wrong" /> Hospital</div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz5" value="wrong" /> Temple</div>
+        <button class="btn btn-primary mt-3" onclick="checkAnswer('quiz5')">Submit</button>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body" data-word="ఎర్ర జాకెట్" data-translation="Red Jacket" data-pronunciation="er-ra jaa-ket" data-image="images/red-jacket.jpg">
+        <p>What does "ఎర్ర జాకెట్" mean?</p>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz6" value="wrong" /> Black Shirt</div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz6" value="wrong" /> Green Hat</div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz6" value="correct" /> Red Jacket</div>
+
+        <button class="btn btn-primary mt-3" onclick="checkAnswer('quiz6')">Submit</button>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body" data-word="ప్రపంచం" data-translation="World" data-pronunciation="pra-pan-chan" data-image="images/world.jpg">
+        <p>What does "ప్రపంచం" mean?</p>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz7" value="wrong" /> Country</div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz7" value="wrong" /> City</div>
+
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz7" value="correct" /> World</div>
+
+        <button class="btn btn-primary mt-3" onclick="checkAnswer('quiz7')">Submit</button>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body" data-word="సమయం" data-translation="Time" data-pronunciation="sa-ma-yam" data-image="images/time.jpg">
+        <p>What does "సమయం" mean?</p>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz8" value="wrong" /> Clock</div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz8" value="wrong" /> Moment</div> 
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz8" value="correct" /> Time</div>
+
+        <button class="btn btn-primary mt-3" onclick="checkAnswer('quiz8')">Submit</button>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body" data-word="నవ్వుతూ" data-translation="Smiling" data-pronunciation="na-vu-tu" data-image="images/smiling.jpg">
+        <p>What does "నవ్వుతూ" mean?</p>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz9" value="correct" /> Smiling</div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz9" value="wrong" /> Running</div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz9" value="wrong" /> Sleeping</div>
+        <button class="btn btn-primary mt-3" onclick="checkAnswer('quiz9')">Submit</button>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body" data-word="ఉదయం" data-translation="Morning" data-pronunciation="u-da-ya-m" data-image="images/morning.jpg">
+        <p>What does "ఉదయం" mean?</p>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz10" value="correct" /> Morning</div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz10" value="wrong" /> Evening</div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="quiz10" value="wrong" /> Night</div>
+        <button class="btn btn-primary mt-3" onclick="checkAnswer('quiz10')">Submit</button>
+      </div>
+    </div><div class="d-flex justify-content-center mb-4">
+      <a href="index.html" class="btn btn-secondary">Back to Home</a>
+    </div>
+  </div>
+</body>
+
+</html>
