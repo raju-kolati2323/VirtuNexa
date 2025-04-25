@@ -1,0 +1,82 @@
+body {
+    background-color: #f4f4f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #34495e;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#serverMessage {
+    font-size: 1rem;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+#result {
+    display: none;
+    margin-top: 40px;
+}
+
+#result h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    font-size: 1rem;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.list-group-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.badge {
+    background-color: #3498db;
+    color: white;
+    padding: 6px 10px;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.btn-danger {
+    margin-top: 10px;
+}
+

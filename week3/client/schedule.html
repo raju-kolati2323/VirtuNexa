@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Care Schedule</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="plant.css">
+    <script defer src="plant.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Plant Care Schedule</h1>
+        
+        <form id="plantForm">
+            <div class="mb-3">
+                <label for="plantName" class="form-label">Plant Name</label>
+                <input type="text" class="form-control" id="plantName" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="wateringInterval" class="form-label">Watering Interval (days)</label>
+                <input type="number" class="form-control" id="wateringInterval" >
+            </div>
+            
+            <div class="mb-3">
+                <label for="pruningInterval" class="form-label">Pruning Interval (days)</label>
+                <input type="number" class="form-control" id="pruningInterval" >
+            </div>
+            
+            <div class="mb-3">
+                <label for="fertilizingInterval" class="form-label">Fertilizing Interval (days)</label>
+                <input type="number" class="form-control" id="fertilizingInterval" >
+            </div>
+
+            <button type="submit" class="btn btn-primary">Save Schedule</button>
+        </form>
+
+        <div id="result" class="mt-4">
+            <h3>Plant Care Reminders</h3>
+            <div id="messageContainer" class="alert alert-info mt-3" style="display: none;"></div>
+            <ul id="remindersList" class="list-group"></ul>
+        </div>
+        
+    </div>    
+</body>
+</html>
