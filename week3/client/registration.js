@@ -1,4 +1,4 @@
-const SERVER_LINK = 'http://localhost:5000';
+const SERVER_LINK = 'https://plant-care-pbf7.onrender.com';
 const REG_API = `${SERVER_LINK}/api/registration`;
 
 document.getElementById('registerForm').addEventListener('submit', async (e) => {
